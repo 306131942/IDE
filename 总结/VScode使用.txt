@@ -1,0 +1,122 @@
+初体验
+http://www.jianshu.com/p/531067362dec
+使用小技巧
+https://zhuanlan.zhihu.com/p/22880087
+
+关闭更新提示
+文件-首选项-设置-搜索“自动更新”
+如果你想手动更新，可以在顶部菜单栏点击“帮助”——“检查更新”完成更版本新；
+
+
+轻量级的编辑器
+Visual Studio Code（以下简称vscode）是一个轻量且强大的代码编辑器，支持Windows，OS X和Linux。
+内置JavaScript、TypeScript和Node.js支持，而且拥有丰富的插件生态系统，可通过安装插件来支持C++、C#、Python、PHP等其他语言。
+
+
+==============常用快捷键================================================
+1、C+S+P命令面板
+
+2、同时打开多个窗口（查看多个项目）
+    打开一个新窗口： Ctrl+Shift+N-----------------------------------------------
+    关闭窗口： Ctrl+Shift+W
+3、Ctrl+`打开或者关闭终端
+4、同时打开多个编辑器（查看多个文件）
+    新建文件 Ctrl+N
+    历史打开文件之间切换 Ctrl+Tab，Alt+Left，Alt+Right
+
+    切出一个新的编辑器（最多3个）Ctrl+\，也可以按住Ctrl鼠标点击Explorer里的文件名
+    左中右3个编辑器的快捷键Ctrl+1 Ctrl+2 Ctrl+3
+5、	上下移动一行： Alt+Up 或 Alt+Down
+	向上向下复制一行： Shift+Alt+Up或Shift+Alt+Down
+	在当前行下边插入一行Ctrl+Enter
+	在当前行上方插入一行Ctrl+Shift+Enter
+
+==============常用快捷键================================================
+
+
+
+-----------------------------------------------------用户配置相关------------------------------------------------------
+vscode的用户配置分3个级别，分别是默认配置、全局配置和工作区配置，优先级也依次递增。
+对于团队项目，一些规范可以通过项目目录下建一个.vscode/setting.json文件进行配置,比如：
+（也就是，工作区配置，默认生成文件）
+
+1、颜色主题、图标：文件-》首选项
+vscode-icon
+让 vscode 资源树目录加上图标
+原生第二个选择简单好看
+-----------------------------------------------------用户配置相关------------------------------------------------------
+
+====================================插件安装========================
+https://segmentfault.com/a/1190000006697219
+http://blog.csdn.net/archer119/article/details/72789772
+
+1、Auto close Tag
+2、Auto Rename Tag
+3、Vetur
+
+
+安装完 vetur 后还需要加上这样一段配置下：
+"emmet.syntaxProfiles": {
+  "vue-html": "html",
+  "vue": "html"
+}
+====================================插件安装==========================
+
+
+----------------------------------------------------------Eslint	start----------------------------------------------------
+打开 文件 > 首选项 > 设置 
+Eslint安装和支持在vscode查看出错代码
+1、Vscode安装 ESLint 扩展
+
+2、安装 ESLint
+	npm install -g eslint
+
+3、 eslint --init 
+命令在用户目录中生成一个配置文件（也可以在任何你喜欢的位置进行生成）
+设置完成后我们会得到一份文件名为 .eslintrc.js 的配置文件：
+
+4、配置 ESLint：配置环境，设置语言选项，配置规则
+
+5、让 ESLint 支持 Vue 单文件组件
+	npm install -g eslint-plugin-html
+
+6、设置 ESLint 扩展      打开 VSCode 配置文件
+// 将设置放入此文件中以覆盖默认值和用户设置。
+
+{
+  
+"eslint.options": {
+    "configFile": "G:/sceo2.0/project/bizmodel1.0/it10/.eslintrc.js",
+    "plugins": ["html"]
+  
+},
+  
+"eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "html",
+    "vue"
+  ]
+
+}
+
+教程网址（两个）：
+http://gcdn.gcpowertools.com.cn/showtopic-36912-1-3.html?utm_source=segmentfault&utm_medium=referral&utm_campaign=20170417&utm_content=36912
+
+https://segmentfault.com/a/1190000009077086
+
+扩展：
+$ npm install -g eslint 
+全局安装后文件的地址
+C:\Users\Administrator\AppData\Roaming\npm\node_modules\eslint\bin\eslint.js
+
+----------------------------------------------------------Eslint	end----------------------------------------------------
+
+
+==================================Emment=============================================
+Emmet：HTML/CSS代码快速编写神器
+输入简写，按下tab快速生成代码
+==================================Emment=============================================
+
+
+最后，我们打开一个 vue 文件，可以发现 ESLint 扩展

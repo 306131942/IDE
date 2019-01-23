@@ -1,0 +1,5 @@
+1.Auto Close Tag html标签闭合
+2.Auto Rename Tag html标签重命名
+3.HTML CSS Support html css提示 高亮显示
+4.Terminal  vscode里控制台   快捷键ctrl+`
+5.Vue  或者 Vue2 Snippets vue提示 高亮显示
